@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    background-image: url(6777-min.jpg);
+    height: 100vh;
+    width: 100vw;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box {
+    background-color: white;
+    width: 280px;
+    height: 250px;
+    border-top: 3px solid pink;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 25px;
+}
+
+.iconBox {
+    background-color: rgb(255, 0, 144);
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    align-items: top;
+    position: relative;
+    font-size: 35px;
+}
+
+.miniBox {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    bottom: 50px;
+    gap: 30px;
+}
+
+.contaBox {
+    display: flex;
+    column-gap: 20px;
+    justify-content: center;
+    row-gap: 30px;
+    flex-wrap: wrap;
+}
+
+@media(max-width:1259px) {
+    main {
+        height: 900px;
+        background-size: 1700px;
+        background-position: center;
+        padding: 40px 0;
+
+    }
+}
+
+
+@media(max-width:575px) {
+    main{
+        height: fit-content;
+        background-size: 1800px;
+        background-position: 60% 50%;
+    }
+}
